@@ -1,0 +1,43 @@
+header {
+	height: 130px;
+	position: relative;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 72px;
+	background-color: #ffffcc;
+	min-width: 390px;
+}
+img {
+	float: left;
+	position: relative;
+	top: -130px;
+	left: 40px;
+	margin: 50px auto;
+	height: 115px;
+	width: 90px;
+}
+h1, h3, .edit, td {
+font-family: 'Roboto'; 
+font-size: 23px;
+text-align: center;
+color: black;
+font-family: 'Roboto', 400;
+}
+.input {
+text-align: center;
+padding: 0 0 0px 0;
+background-color: #ffffff;
+}
+.custinput {
+width: 400px;
+background-color: #333333;
+border: 3px solid #ecf0f1;
+border-radius: 5px;
+color: #ecf0f1;
+padding: 10px 10px;
+}
+hr {
+ position: absolute;
+ width: 1300px;
+ color: #0099FF;
+ height: 2px;
