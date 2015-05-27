@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <title>EZList</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-</head>
-   <header>EZ-List
-  <div class="header.img">
-  <img src="../ShoppingList/images/list.png" alt="List" width="90px"></div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
+
+ <header>EZ-List
+    <div class="header-img">
+     <img src="../ShoppingList/images/list.png" alt="List" width="90px"></div>
   </header>
-<body>
-	<div class="input">
-	<input type="text" class="custinput" id="item-input" placeholder="Enter List Item Here" autofocus>
- </div
-     <body style="font-size:20px; text-align:center; position:relative">
-     <h3>Type In Item, Hit Enter</h3>
-	<hr>
-     </body>
+ <body>
+  <center><input id="input_listName" /><button id="btn_createList">add</button></center>
+  <h3 style="margin-top: 5px">Type In Item/Press Add</h3>
+  <h5><center>Click Item to Cross Out/ Remove</center></h5>
+               
+  <ul class="ul_current"> <li><a href="#" class="strike">TEST</a></li></ul>
+      
+</body>
+
 </html>
