@@ -1,16 +1,15 @@
 
-
 $(document).ready(function(){
    $("button").on("click", getInput);
 
 });
 
-//identify Fizz/Buzz/FizzBuzz
+
   function getNumber(input){
     
 for( var i=1; i<=input; i++) {
         
-        if ((i%5==0) && (i%3==0))
+        if ((i%5==0 && i%3==0))
           { $(".num").append( " Fizzbuzz" + "<br>");}
      
         else if (i%3==0)
@@ -36,5 +35,5 @@ for( var i=1; i<=input; i++) {
     custInput.val("");
 
   }
-  else alert("Type in number between 1 and 100");
+  else alert("Only type in a number between 1 and 100");
   }
