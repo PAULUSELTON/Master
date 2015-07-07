@@ -22,16 +22,19 @@ text-align: center;
 color: black;
 }
 input {
-	width: 125px;
+	width: 175px;
+	height: 26px;
+	font-size: 20px;
 	position: center;
 }
 .ul {
 list-style: none;
 font-family:'Roboto';
-font-size: 25px;
+font-size: 30px;
 }
 li {
   list-style: none;
+  font-size: 20px;
   font-family: 'Roboto';
   text-align: left;
 }

@@ -48,32 +48,36 @@ html{
     font-family: 'Raleway', sans-serif;
     background: white;
 }
+
 body{
 
 }
 
-header{
-    
-    margin: 0 0 20px 0;
-    border-bottom: 1px solid black
+header, footer {
+    position: center;
+    width: 100%;
+    margin: 10 0 10px 0; }
 
-}
 button{
     outline: none;
 }
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 65px;
-    margin: 30 0 25px 0;
+    font-size: 60px;
+    margin: 20 0 25px 0;
 }
 
 h2{
-    font-size: 27px;
-    margin-bottom: 10px;
+    margin: 7px 0 0 60px;
+    font-size: 35px;
+    font-style: bold;
+    
 }
+
 h3 {
    font-family: "Raleway";
-   font-size: 20px;
+   font-size: 23px;
+   font-style: bold;
 }
 
     }
@@ -93,7 +97,7 @@ h3 {
 
 .play-area{
     background: white;
-    width: 900px;
+    width: 400px;
     height: 800px;
     text-align: center;
     margin: 0 auto 0 auto;
@@ -106,12 +110,12 @@ h3 {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 700px;
 }
 #answer-screen{
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     width: 900px;
     height: 800px;
     background: white;
@@ -120,10 +124,13 @@ h3 {
 }
 
 #quizpic {
-    float: right;
-    height: 270px;
+    padding-top: 2px;
+    float: left;
+    height: 360px;
+    width:  315px;
 }
 
+/*
 #answer-screen img{
     float: left;
 }
@@ -138,30 +145,29 @@ h3 {
     margin-bottom: 18px;
     border-bottom: 2px solid black;
 }
-
+*/
 #choices{
-    width: 800px;
+    width: 80%;
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     padding-top: 20px
 }
 #answers{
     width: 800px;
     text-align: center;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     clear: both;
     display: inline-block;
 }
 .choice{
-    width: 350px;
-    height: 50px;
+    width: 400px;
+    height: 70px;
     font-size: 27px;
     margin: 0 0 10px 0;
     border-radius: 4px;
     border: 1px solid black;
     box-shadow: 0px 0px 4px 1px;
 }
-
 
 .choice:hover{
     border: 2px solid white;
@@ -175,7 +181,7 @@ h3 {
     width: 220px;
     height: 150px;
     font-size: 18px;
-    margin: 20px 10px 50px 10px;
+    margin: 20px 10px 10px 10px;
     border-radius: 50px;
     border: 1px solid black;
     box-shadow: inset 0 0 10px;
@@ -209,8 +215,10 @@ h3 {
 }
 
 img{
-    width: 250px;
+    min-height: 360px;
+    width: 315px;
     float: left;
+    padding-bottom: 5px;
   
 }
 
@@ -219,15 +227,23 @@ img{
 }
 
 .left-col{
+    width: 60%;
     float: left;
 }
-/*
 .right-col{
+    padding-top: 70px;
+    width: 40%;
     float: right;
+
 }
-*/
+.left-col h2 {
+    height: auto;
+    width: 100%;
+
+}
+
 .selected{
-    /*background: #7474F3;*/
+    
     color: black;
     min-width: 200px;
     font-size: 25px;
@@ -250,103 +266,8 @@ img{
     background-color: rgba(0,0,0,0.2);
     
 }
-/*
-.help{
-    position: relative;
-    top: -510px;
-    height:350px;
-    left:-175px;
-    width: 500px;
-    display: inline-flex;
-    z-index: 3;
-}
 
-.help2{
-    position: relative;
-    top: -510px;
-    height: 350px;
-    left: 400px;
-    width: 500px;
-    display: inline-flex;
-    z-index: 3;
-}
-.help3{
-    position: relative;
-    top: -150px;
-    height: 350px;
-    left: 110px;
-    width: 500px;
-    display: inline-flex;
-    z-index: 3;
-}
-.outline{
-    height: 350px;
-    width: 275px;
-    border: 3px dashed white;
-    background: rgba(255, 255, 255, 0.4);  
-        
-}
-.help-text{
-    margin:100px 0 0 20px;
-    width: 200px;
-    height: 120px;
-    float: right;
-    background: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
 
-.help-text2{
-    margin:100px 0 0 -500px;
-    width: 200px;
-    height: 120px;
-    float: left;
-    background: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-.help-text3{
-    margin:100px 0 0 -500px;
-    width: 200px;
-    height: 120px;
-    float: left;
-    background: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.help-text h3, .help-text2 h3, .help-text3 h3{
-    margin: 5px;
-    border-bottom: 1px solid black;
-    font-weight: bold;
-}
-
-.darken{
-    position: absolute;
-    background: black;
-    opacity: 0.5;
-    z-index: 2;
-    width: 900px;
-    height: 800px;
-}
-
-#next-tip{
-    margin: 15px 0 0 0px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-#next-tip:hover{
-    background: #D1D1D1;
-}
-*/
 #ending{
     position: absolute;
     z-index: 2;

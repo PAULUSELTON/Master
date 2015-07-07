@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>The Hello World of News Search</title>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      
+      // This code generates a "Raw Searcher" to handle search queries. The Raw 
+      // Searcher requires you to handle and draw the search results manually.
+      google.load('search', '1');
+
+      var newsSearch;
+
+      function searchComplete() {
+
+        // Check that we got results
+        document.getElementById('content').innerHTML = '';
+        if (newsSearch.results && newsSearch.results.length > 0) {
+          for (var i = 0; i < newsSearch.results.length; i++) {
+
+            // Create HTML elements for search results
+            var p = document.createElement('p');
+            var a = document.createElement('a');
+            a.href="/news-search/v1/newsSearch.results[i].url;"
+            a.innerHTML = newsSearch.results[i].title;
+
+            // Append search results to the HTML nodes
+            p.appendChild(a);
+            document.body.appendChild(p);
+          }
+        }
+      }
+
+      function onLoad() {
+
+        // Create a News Search instance.
+        newsSearch = new google.search.NewsSearch();
+  
+        // Set searchComplete as the callback function when a search is 
+        // complete.  The newsSearch object will have results in it.
+        newsSearch.setSearchCompleteCallback(this, searchComplete, null);
+
+        // Specify search quer(ies)
+        newsSearch.execute('Rand Paul');
+
+        // Include the required Google branding
+        google.search.Search.getBranding('branding');
+      }
+
+      // Set a callback to call your code when the page loads
+      google.setOnLoadCallback(onLoad);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="branding"  style="float: left;"></div><br />
+    <div id="content">Loading...</div>
+    <div class="gs-result gs-newsResult">
+
+ <!-- Note, a.gs-title can have embedded HTML
+ // so make sure to account for this in your rules.
+ // For instance, to change the title color to red,
+ // use a rule like this:
+ // a.gs-title, a.gs-title * { color : red; }
+ -->
+ <div class="gs-title">
+  <a class="gs-title"></a>
+ </div>
+ <div class="gs-publisher"></div>
+
+ <!-- The default CSS rule enables the relative
+ // published date while a result is sitting in
+ // a search control, and an absolute published date
+ // if the result is outside of the control. Using your
+ // own CSS rule, you can select whichever date form
+ // works best for your pages.
+ -->
+ <div class="gs-publishedDate"></div>
+ <div class="gs-relativePublishedDate"></div>
+
+ <div class="gs-snippet"></div>
+
+ <!-- If a result is related to other
+ // articles, this element is present.
+ -->
+ <div class="gs-clusterUrl">
+  <a class="gs-clusterUrl"></a>
+ </div>
+</div>
+  </body>
+</html>

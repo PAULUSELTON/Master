@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Cardiac Quiz</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/questions.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+</head>
+<body>
+
+<section id="ending"></section>
+	<section id="intro">
+		<div class="center">
+			<h1>Cardiac Quiz</h1>
+			<button id="start">Take Quiz</button>
+		</div>
+</section>
+<section class="play-area">
+	<div class="darken"></div>
+	<section id="answer-screen">
+		<div class="center">
+			<h1>Correct!</h1>
+			<img src=""/>
+			<p></p>
+			<button class="green" id="next">Next Question</button>
+		</div>
+	</section>
+	<section id="choices">
+		<header>
+			<h1>Cardiac Quiz</h1>
+			<h2>Question <span class="cur_quest_num">1</span> of <span class="total_quest_count">5</span></h2>
+		</header>
+		<section class="left-col">
+			<h2>Select Video Game</h2>
+			<ul>
+				
+			</ul>
+		</section>
+		<img src="images/daisy.png"></img>
+		<section class="right-col">
+			<h2>Select Character Name</h2>
+			<ul>
+			
+			</ul>
+		</section>
+		
+	</section>
+	<section id="answers">
+		<h2>Your Answers</h2>
+		<div class="answer"><span id='vg'>Video Game</span></div>
+		<div class="answer"><span id='cn'>Character Name</span></div>
+		<br>
+		<button class="green" id="submit">Submit</button>
+	</section>
+
+    <section id="help-box" class="help">
+        <div class="outline"></div>
+        <div class="help-text">
+            <h3>Tips</h3>
+            <p>Select the video game you believe this character is from.</p>
+            <button id="next-tip">Next</button>
+        </div>
+    </section>
+</section>
+</body>

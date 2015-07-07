@@ -1,20 +1,19 @@
 body{
-	margin-top: 125px;
-	font-family: 'Raleway';
+    margin-top: 125px;
+    font-family: 'Raleway';
 }
 
 h1{
-	margin-top: 30px:;
-	text-align: center;
+    margin-top: 30px:;
+    text-align: center;
 }
 
 img {
-	float: right;
-	height: 140px;
-	width:  135px;
+    float: right;
+    height: 140px;
+    width:  135px;
 }
 #wrapper { 
-
 width:550px;
 margin:50px auto;
 }
@@ -66,8 +65,8 @@ background: #1E90FF;
 }
 
 .reset {
-background: #0000CD;
-    color: #0000CD;
+background: #FF0000;
+    color: #FF0000;
     cursor: pointer;
     letter-spacing: 1px;
     padding: 10px 0;
@@ -78,10 +77,10 @@ width:100%;
 }
 
 .reset:hover {
-background: #1E90FF;
+background: #FF3300;
 }
 
 .reset:active {
 border-color: none;
-color: #1E90FF;
+color: #FF0000;
 }

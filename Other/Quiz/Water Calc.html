@@ -1,0 +1,76 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>"
+
+<html>
+<head>
+	<title>Water Calculator</title>
+	<script type="text/javascript">
+		function addit() {
+			var shower = document.getElementById('shower');
+			var bath = document.getElementById('bath');
+			var washing = document.getElementById('washing');
+			var dishwasher = document.getElementById('dishwasher');
+			var lawn = document.getElementById('lawn');
+			var toilet = document.getElementById('toilet');
+			var toothbrushing = document.getElementById('toothbrushing');
+			var handwashing = document.getElementById('handwashing');
+			var shower_daily = shower.value * 7;
+			var shower_total = shower_daily * 7;
+			var bath_total = bath.value * 32;
+			var washing_total = washing.value * 48;
+			var dishwasher_total = dishwasher.value * 15;
+			var lawn_total = lawn.value * 5;
+			var toilet_daily = toilet.value * 6;
+			var toilet_total = toilet_daily * 7;
+			var toothbrushing_daily = toothbrushing.value * 3;
+			var toothbrushing_total = toothbrushing_daily * 7;
+			var handwashing_total = handwashing.value * 3.5;
+			var total = shower_total + bath_total + washing_total + dishwasher_total + lawn_total + toilet_total + toothbrushing_total + handwashing_total;
+			document.getElementById('result').innerHTML='You are using a total of <span class="gallons">' + total + '</span> gallons of water per week.';
+		};
+	</script>
+	<style>
+		span.gallons{ color:#0067AC; }
+		body { font-family:'Trebuchet MS', sans-serif; color:#575757;  font-size:16px; }
+		.input { background: #fff; float:right;  border: 1px solid #807F83; width:35px; color:#0067AC; padding: 2px; } 
+		fieldset { border:#0067AC solid 2px; padding:0px 20px; }
+		.button { background-color:#0067AC; color:#fff; font-weight:bold; font-size:16px; display: block; width: 100px; height: 35px; padding: 5px; border:none; outline: 0; }
+		.button:hover { background-color:#BABCBE; color:#000; font-weight:bold; font-size:16px; display: block; width: 100px; height: 35px; padding: 5px; border:none; outline: 0; cursor: pointer;}
+		legend { font-weight:bold; font-size:20px; }
+		#result { font-weight:bold; }
+		textarea:focus, input:focus {
+	border: 2px solid #0067AC;
+}	
+input::-moz-focus-inner { border: 0; }
+	</style>
+</head>
+<body>
+<div style="width:635px; margin:0px auto;">
+<form action="" id="waterform" onsubmit="return false;">
+<fieldset>
+                <legend>Calculate your weekly water usage</legend>
+<p><label>How many minutes do you shower per day?</label> <input class="input"type="text" id="shower" onchange="addit()"> </p>
+<p><label>How many times do you take a bath per week?</label> <input class="input"type="text" id="bath" onchange="addit()"> </p>
+<p><label>How many times do you run the washing machine per week?</label> <input class="input"type="text" id="washing" onchange="addit()"> </p>
+<p><label>How many times do you run the dishwasher per week?</label> <input class="input"type="text" id="dishwasher" onchange="addit()"> </p>
+<p><label>How many minutes do you spend watering your lawn per week?</label> <input class="input"type="text" id="lawn" onchange="addit()"> </p>
+<p><label>How many times do you flush your toilet per day? </label> <input class="input"type="text" id="toilet" onchange="addit()"> </p>
+<p><label>How minutes do you spend brushing your teeth with the water on per day?</label> <input class="input"type="text" id="toothbrushing" onchange="addit()"> </p>
+<p><label>How many times do you wash your hands per day?</label> <input class="input"type="text" id="handwashing" onchange="addit()"> </p>
+                </fieldset>
+</form>
+
+	<input class="button" type="submit" value="Calculate!" onClick='addit()'>
+	
+    <p id="result"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background: url("background.png");
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Here starts the custom CSS for this site */
+body {
+    min-width: 980px;
+}
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#add_item {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#add_item input, #button_bar input {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#add_item input[type=text] {
+    width: 30em;
+    margin-right: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px #ccc;
+}
+
+#add_item p {
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+input[type=submit], input[type=button] {
+    box-shadow: 5px 5px #ccc;
+    border-radius: 5px;
+}
+
+input[type=submit]:enabled:hover, input[type=button]:enabled:hover {
+    cursor: pointer
+}
+
+#edit_item {
+    margin-top: 50px;
+}
+
+#shopping_list {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px #ccc;
+    display: none;
+}
+
+#shopping_list li {
+    position: relative;
+    height: 20px;
+    padding: 10px;
+    margin: 5px auto;
+    font-size: 20px;
+
+    /* Elements are hidden by default and displayed through js animation */
+    display: none;
+}
+
+#shopping_list li:nth-child(odd) {
+    background: rgb(173, 216, 227);
+    background: rgba(173, 216, 227, 0.5);
+}
+
+#shopping_list li:hover {
+    background: rgb(208, 208, 208);
+    background: rgba(208, 208, 208, 0.5);
+    cursor: pointer;
+}
+
+#shopping_list input[type=checkbox] {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#shopping_list input[type=text] {
+    font-size: 20px;
+    width: 750px;
+    border: none;
+    outline: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+#shopping_list a {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#items_info {
+    float: left;
+    text-align: left;
+}
+
+#selected_items_info {
+    display: none;
+}
+#help_text {
+    text-align: right;
+}
+
+#button_bar {
+    margin-top: 30px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#button_bar input:first-child {
+    margin-right: 20px;
+}
+

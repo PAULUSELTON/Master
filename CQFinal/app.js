@@ -58,9 +58,9 @@ $(document).ready(function () {
             correct: 0
         }];
 
-        var counter = questions.length;
+   var counter = questions.length;
 
-        //Gets question/answer data from questions array-appends it to #questions
+        //This grabs the question and answer data from the questions array and appends it to the #questions div:
         function createQuestion(questions) {
             for (var i = 0; i < questions.length; i++) {
                 $(".start").hide();
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 $('#' + k).hide();
             }
         }
-        //collects answer choices from questions array,returns them to createQuestion():
+        //This grabs the answer choices from the questions array and returns them to createQuestion():
         function radioButtons(ary, qNum) {
             var answers = [];
             for (i = 0; i < ary.length; i++) {
@@ -80,13 +80,14 @@ $(document).ready(function () {
             return answers.join(" ");
         }
         
-        //adds # of correct anwswers
-                function sumScore(questions) {
+        //This sums the correct values in the questions array:
+        function sumScore(questions) {
             return scoreAry.reduce(function (previousValue, currentValue, index, array) {
                 return previousValue + currentValue;
             });
         }
-            //evaluates answe/updates score
+        
+        //This checks the user's answer and updates the score:
         function checkAnswer(answer, qNum, questions) {
             if (answer == questions[qNum].a) {
                 questions[qNum].correct = 1;
@@ -99,9 +100,9 @@ $(document).ready(function () {
         createQuestion(questions);
         
         $(".next").click(function (event) {
-            event.preventDefault(); //prevents form submission
-            var qNum = $(this).closest("form").attr("id"); //question number
-            var userInput = $('input[name=' + qNum + ']:radio:checked').val(); //gets selected answers
+            event.preventDefault(); //This stops the form from submitting
+            var qNum = $(this).closest("form").attr("id"); //This gives us the question number
+            var userInput = $('input[name=' + qNum + ']:radio:checked').val(); //This grabs the user's selected answer
             if (counter > 1) {
                 checkAnswer(userInput, qNum, questions);
                 $("#" + qNum).hide();
@@ -111,7 +112,7 @@ $(document).ready(function () {
                 checkAnswer(userInput, qNum, questions);
                 $("#questions").find("form").remove();
                 $("#questions").append('<h3 class="result"></h3>');
-                $(".result").text('You got ' + sumScore(questions) + ' questions out of 10 right.');
+                $(".result").text('You answered ' + sumScore(questions) + ' questions correctly out of 10.');
                    for (j = 0; j < scoreAry.length; j++) {
                         if (scoreAry[j] === 0) {
                             console.log(questions[j].q, questions[j].a);
@@ -124,3 +125,4 @@ $(document).ready(function () {
         });
     }
 });
+     

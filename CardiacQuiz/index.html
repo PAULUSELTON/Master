@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
 <title>Cardiac Quiz</title>
 <link href="http://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css">
@@ -6,73 +8,69 @@
 <meta charset="UTF-8">
 </head>
 	
-<body>
-<section id="ending" style="display: none;"></section>
-<section id="intro" style="display: none;">
+	<body>
+		<section id="ending" style="display: none;"></section>
+		<section id="intro" style="display: none;">
 		<div class="center">
+		 		
 			<h1>Cardiac Quiz</h1>
 			<button id="start">Take Quiz</button>
 		</div>
-</section>
-  <section class="play-area" style="display: block;">
-	<!--<div class="darken" style="display: none;"></div>-->
-	<section id="answer-screen" style="display: none;">
+	</section>
+  	
+	
+	<main id="choices" class="play-area" style="display: block" >
+		<header>
+			<h1>Cardiac Quiz</h1>
+			<h2 class="cur_quest_num">1/5</h2>
+			<hr style="width: 80%", "color:blue">
+		</header>
+		<h2>Question 1</h2>
+		<br>
+		<section class="left-col">
+		<br>
+		   
+		   <br>
+			<h3>Click Answer then Submit</h3>
+			<br>
+			<ul>
+				<li>
+				  <button class="choice CN">Choice 1</button>
+    			</li>
+				<li>
+				  <button class="choice CN">Choice 2</button>
+    			</li>
+				<li>
+				  <button class="choice CN">Choice 3</button>
+    			</li>
+				<li>
+				  <button class="choice CN">Choice 4</button>
+    			</li>
+				<li>
+				  <button class="choice CN">Choice 5</button>
+	   			</li>
+			</ul>
+		</section>
+		<section class="right-col">
+		<div id="quizpic"</div>
+		 <img src="C:\Users\paul\Documents\GitHub\Master\CardiacQuiz\images/Aortapic.png">
+		</section> 
+		<footer id="answers">
+		<h3>Your Choice</h3>
+		<br>
+		<div class="selected"><span id="choice"></span></div>
+		<br>
+		<button class="green" id="submit">Submit</button>
+		<section id="answer-screen" style="display: none;">
 		<div class="center">
 			<h1>Correct!</h1>
-			
+			<h1>Incorrect!</h1>
 			<p></p>
 			<button class="green" id="next">Next Question</button>
 		</div>
 	</section>
-	<section id="choices">
-		<header>
-			<h1>Cardiac Quiz</h1>
-			<h2><span class="cur_quest_num">1</span> / <span class="total_quest_count">5</span></h2>
-		</header>
-		<section class="left-col">
-		   <h2>The artery that takes blood from the heart is</h2>
-		   <br>
-			<h3>Click Answer then Submit</h3>
-			<br>
-			<ul><li><button class="choice CN"" 
-    
-">Aorta</button></li><li><button class="choice CN" style="
-    
-">Pulmonary Artery</button></li><li><button class="choice CN" style="
-    
-">Pulmonary Veins</button></li><li><button class="choice CN" style="
-    
-">Inferior Vena Cava</button></li><li><button class="choice CN" style="
-    
-">Superior Vena Cava</button></li>
-				
-			</ul>
-		</section>
-		
-		<!--<img src="images/Aortapic.png" style="float:right", "padding-top:10px"-->
-		<!--<section class="right-col">-->
-			<!--<img id="quizpic">
-			</ul>
-		</section>-->
-		
-	</section>
-	<section id="answers">
-		<h2>Your Choice</h2>
-		<div class="selected"><span id="vg">Superior Vena Cava</span></div>
-		<div class="answer"><span id="cn">Select Character Name</span></div>
-		<br>
-		<button class="green" id="submit">Submit</button>
-	</section>
-
-    <!--<section id="help-box" class="help3" style="display: none;">
-        <div class="outline"></div>
-        <div class="help-text3">
-            <h3>Tips</h3>
-            <p>Your answers will appear here, click submit when you're ready!</p>
-            <button id="next-tip">Next</button>
-        </div>
-    </section>-->
-</section>	
+		</footer>
+	</main>
 </body>
 </html>
 

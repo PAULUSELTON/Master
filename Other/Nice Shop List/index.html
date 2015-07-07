@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shopping List</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Shopping list</h1>
+            <h2>Write a list of the items you need to buy</h2>
+        </header>
+
+        <main>
+            <form id="add_item">
+                <input type="text" name="item" id="item" pattern="\s*?\w+.*"
+                    placeholder="Something you need to buy" required autofocus>
+                <input type="submit" value="Add">
+                <p id="error">Error: <span></span>
+            </form>
+
+            <form id="edit_item">
+                <ul id="shopping_list"></ul>
+
+                <p id="items_info">
+                    <span id="item_count">0</span> items
+                    <span id="selected_items_info">(<span id="selected_items_count">0</span>
+                        selected)
+                    </span>
+                </p>
+
+                <div id="help_text">
+                    <p>Click: select item</p>
+                    <p>Double click: edit item</p>
+                    <p>Drag &amp; drop: reorder items</p>
+                </div>
+
+                <div id="button_bar">
+                    <input id="toggle_all_btn" type="button" value="Select all" disabled>
+                    <input id="complete_btn" type="button" value="Mark as complete" disabled>
+                </div>
+            </form>
+        </main>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="application.js"></script>
+</html>
