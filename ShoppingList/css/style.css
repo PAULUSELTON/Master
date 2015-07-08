@@ -1,8 +1,11 @@
+a {
+	text-decoration: none;
+}
 header {
 	height: 130px;
 	text-align: center;
 	font-family: 'Roboto';
-	font-size: 68px;
+	font-size: 65px;
 	background-color: #ffffcc;
 	min-width: 450px;
 }
@@ -15,30 +18,58 @@ img {
 	height: 115px;
 	width: 90px;
 }
-h2, h3 {
+h3 {
+position: center;
+margin-right: 35px;
 font-family:'Roboto'; 
+font-size: 19px;
+text-align: center;
+color: black;
+}
+
+h4 {
+position: center;
+font-family:'Arial'; 
 font-size: 18px;
 text-align: center;
 color: black;
 }
+
 input {
-	width: 175px;
+	width: 225px;
 	height: 26px;
 	font-size: 20px;
 	position: center;
 }
+button#btn_createList {
+  color: red;
+  font-size: x-large;
+  margin-top: 1px;
+  margin-left: 4px;
+}
 .ul {
+text-decoration: none;
+text-align: left;
 list-style: none;
-font-family:'Roboto';
-font-size: 30px;
+font-family:'Arial';
+font-size: 25px;
+color: black;
 }
 li {
+  text-align: left;	
+  text-indent: none;
   list-style: none;
-  font-size: 20px;
-  font-family: 'Roboto';
-  text-align: left;
+  font-size: 25px;
+  font-family: 'Arial';
+  color: black;
+  
 }
 .strikeit {
+	text-indent: none;
+	color: black;
+	text-align: left;
 	text-decoration: line-through;
 }
-.strike{ display: block;}
+
+.strike{ display: block;
+	color: black;}

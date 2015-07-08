@@ -7,7 +7,9 @@
 
 	$(document).on('click','.strike',function(){
 	  		$(this).addClass("strikeit");
-	});
+	  		  $(this).dblclick(function(){
+	  		  	$(this).hide();
+	  });
 		 
-
+	});	 
 });
