@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers*/ 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************End of CSS reset **************************/
+body {
+	font-family: 'Arial';
+	background-color: #E6E6E6
+}
+
+h1 {
+	
+	display: inline-block;
+	margin: 15px 400px 0px 400px;
+	padding: 5px 15px;
+	font-family: 'Droid Sans', sans-serif;';
+	font-size: 50px;]
+	font-weight: bold;
+}
+
+.picture {
+display: block;
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+height:100%;
+border-radius: 20px;
+}
+
+#RA{
+background-image: url('../QuizApp2/RightAtriumpic2.png');
+min-height: 180px;
+min-width: 120px;
+border-radius: 25px;
+}
+
+#Aorta {
+background-image: url('../QuizApp2/Aortapic.png');
+}
+
+#PA {
+background-image: url('../QuizApp2/PulmonaryArterypic.png');
+}
+
+#LCA {
+background-image: url('../QuizApp2/LeftCoronaryArtery.png');
+}
+
+#Apex{
+background-image: url('../QuizApp2/Apexpic.png');
+}
+
+#container {
+	display: block;
+	position: relative;
+	margin: 40px auto 40px auto;
+	padding: 20px;
+	border-radius: 30px;
+	width: 80%;
+	min-width: 1140px;
+	box-shadow: 2px 2px 2px black;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.area {
+	background-color: rgba(45, 76, 145, 0.27);
+	
+}
+#picture-area {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	min-width: 300px;
+	height: 400px;
+	margin: 20px 10px 20px 10px;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+#form-area {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	min-width: 300px;
+	height: 400px;
+	margin: 20px 15px 60px 10px;
+	padding: 20px;
+	border-radius: 20px;
+	vertical-align: bottom;
+}
+
+#feedback-area {
+	display: block;
+	width: 75%;
+	margin: 20px auto 5px auto;
+	background-color: white;
+	position: relative;
+	height:auto;
+	
+	height: 60px;
+	font-size: 20px;
+	
+}
+
+.chosen {
+	position: relative; 	
+	width: 150px;
+	font-size: 13px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px auto 10px auto;
+	font-style: italic;
+}
+
+#feedback {
+	display: block;
+	padding: 6px;
+}
+
+#score-box {
+	display: inline-block;
+	width:100px;
+	height: 50px;
+	text-align: center;
+	position: absolute;
+	right: 30px;
+	top: 18px;
+	border-radius: 5px;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	background: white;
+}
+
+#score-label, #score {
+	position: relative;
+	top: 35%;
+}
+
+#question {
+	display: block;
+	margin: 10px;
+	height: 30px;
+}
+
+input[type="radio"] {
+	display: inline-block;
+}
+
+input[type="button"] {
+	display: block;
+	padding: 5px;
+	border-radius: 10px;
+	width: 250px;
+	text-align: center;
+	margin: 15px auto 10px auto;
+	background: #deefff; /* Old browsers */
+	
+	
+
+}
+
+input[type="button"]:hover {
+	cursor: pointer;
+}
+
+.choice {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	margin: 10px auto 10px auto;
+	width: 275px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 1px black;
+	
+	font-size: 18px;
+	font-weight: bold;
+}
+.correct {
+	background: #9dd53a; /* Old browsers */
+	
+}
+
+.incorrect {
+background: #d80003; /* Old browsers */
+
+}
+
+.unanswered {
+	background: #fefcea; /* Old browsers */
+	
+
+#nav-buttons {
+	display: inline-block;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 120px;
+
+}
+
+.nav-button {
+	display: inline-block;
+	background-color: white;
+	width: 100px;
+	
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;	
+	z-index: 1;
+}
+
+.nav-button:hover {
+	cursor: pointer;
+	outline-width: 3px;
+	outline-style: solid;
+	outline-color: rgba(5, 128, 113, 0.0);
+	outline: 2px solid #058071; 
+}
+
+#next, #previous {
+	background: white;/* Old browsers */
+
+}
+/*
+#box {
+	display: none;
+	padding:5px;
+	margin: 5px;
+	border-radius: 5px;
+	top: 78px;
+	left:270px;
+	position: absolute;
+	height: 17px;
+	width:100px;
+	border: 5px solid rgba(67, 138, 202, 0.5);
+	z-index: 0;
+}
+*/

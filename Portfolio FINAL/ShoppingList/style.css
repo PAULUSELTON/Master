@@ -1,0 +1,41 @@
+header {
+	height: 130px;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 68px;
+	background-color: #ffffcc;
+	min-width: 450px;
+}
+img {
+	float: left;
+	position: relative;
+	top: -130px;
+	left: 60px;
+	margin: 50px auto;
+	height: 115px;
+	width: 90px;
+}
+h2, h3 {
+font-family:'Roboto'; 
+font-size: 18px;
+text-align: center;
+color: black;
+}
+input {
+	width: 125px;
+	position: center;
+}
+.ul {
+list-style: none;
+font-family:'Roboto';
+font-size: 25px;
+}
+li {
+  list-style: none;
+  font-family: 'Roboto';
+  text-align: left;
+}
+.strikeit {
+	text-decoration: line-through;
+}
+.strike{ display: block;}

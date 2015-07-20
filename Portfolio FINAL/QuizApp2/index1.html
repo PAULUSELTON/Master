@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <link rel="stylesheet" type="text/css" href="main1.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    
+    <script type='text/javascript' src='script.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+
+
+<div id="container">
+<h1 style="display: inline-block;margin-left: 470px;margin-bottom: 10px;height: 100px;margin-right: 50px;margin-top: 16px;">Cardiac Quiz</h1>
+
+<div id="nav-area">
+	<div id="box" style="left: 270px;"></div>
+	<div id="nav-buttons" style="
+    margin-left: 130px;
+    margin-top: 20px;
+">
+	<div id="previous" class="nav-button" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">previous</div>
+	<div id="next" class="nav-button" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">next</div>
+	<div class="nav-button num unanswered" id="nav0" style="
+    height: 25px;
+    width: 115px;
+    background: none;
+    padding-top: 7px;
+    margin-top: 7px;
+    font-size: 20px;
+    font-style: bold;
+    font-style: bold;
+">1</div><div class="nav-button num unanswered" id="nav1" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">2</div><div class="nav-button num unanswered" id="nav2" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">3</div><div class="nav-button num unanswered" id="nav3" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">4</div><div class="nav-button num unanswered" id="nav4" style="
+    height: 25px;    width: 115px;    background: none;    padding-top: 7px;    margin-top: 7px;    font-size: 20px;
+">5</div></div>
+	<div id="score-box" style="
+    right: 40px;
+    top: 35px;
+    width: 150px;
+"><label id="score-label" style="
+    font-size: 30px;
+">Score:</label><label id="score" style="
+    font-size: 30px;
+">0/5</label></div>	
+	<div id="feedback-area" class="area"><p id="feedback" style="display: block;margin-top: 35px;">Challenge yourself and test your knowledge of the heart!  Choose an answer, then hit the submit button. Question 1 of 5</p></div>
+</div>
+<div id="form-area" class="area" style="
+    margin-left: 150px;
+    margin-top: 40px;
+    height: 425px;
+    width: 430px;
+">
+	<form name="quiz">
+		<label id="question" style="
+    font-size: 20px;
+">Which small chamber of the heart recieves blood back from the rest of the body?</label>
+		<div id="choices" style="
+    height: 315px;
+    text-align: center;
+"><br><input type="radio" id="radio0" name="radios"><div class="choice unanswered" id="choice0" style="
+    width: 325px;
+">Right Atrium</div><div class="chosen" id="chosen0"></div><br><input type="radio" id="radio1" name="radios"><div class="choice unanswered" id="choice1" style="
+    width: 325px;
+">Right Ventricle</div><div class="chosen" id="chosen1"></div><br><input type="radio" id="radio2" name="radios"><div class="choice unanswered" id="choice2" style="
+    width: 325px;
+">Left Ventricle</div><div class="chosen" id="chosen2"></div><br><input type="radio" id="radio3" name="radios"><div class="choice unanswered" id="choice3" style="
+    width: 325px;
+">Left Atrium</div><div class="chosen" id="chosen3"></div></div>
+		<input type="button" value="Submit" id="submit" style="
+    width: 262.6666667461395px;
+">
+		<label id="statusBox"></label>
+		
+	</form>
+</div>
+
+<div id="picture-area" class="area" style="
+    margin-bottom: 55px;
+    width: 435px;
+    height: 435px;
+"><div class="picture" id="RA" style="display: block;"></div></div>
+
+</div>
+</body>
+
+</html>
