@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>My Shopping List</title>
-		<link rel="stylesheet" type="text/css" href="..\ShopList\main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-    <script src="list.js"></script>
-<body>
-	<div id="main">
-		<div id="top"><h1>My Shopping List</h1></div>
-		<div id="num_item">
-			<form action="#">
-				<input type="text" id="item" placeholder="What item?">
-				<input type="text" id="number" placeholder="How Many?">
-				
-			</form>
-		</div>
-		<div id="list">
-			<table id="shopping_list">
-				
-				<tbody>
-					
-				</tbody>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>EZList</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="C:\Users\paul\Documents\GitHub\Master\ShoppingList\list.js"></script>
+</head>
 
-			</table>
-		</div>
-	</div>
+ <body> 
+  <header>EZ-List
+    <div class="header-img">
+     <img src="../ShoppingList/images/list.png" alt="List" width="90px"></div>
+  </header>
+  <center><input id="input_listName" /><button id="btn_createList">add</button></center>
+  <h3>Type In Item/Press Add</h3>
+  <h4>Click Item Once to Cross Out/ Double Click To Remove</h4>
+               
+  <ul class="ul_current"></ul>
+      
 </body>
+
 </html>
